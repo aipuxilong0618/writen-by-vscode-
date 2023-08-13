@@ -1,0 +1,32 @@
+git config --global user.name "jiazhe"
+git config --global user.email 1376743525@qq.com
+
+git init
+
+git clone 网页链接
+
+git status：查看所有文件状态
+
+git add .
+
+git commit(这么写会出来一个框，在vi编辑器里面写注释，i开始写写完后按esc键后:wq退出q!不保存退出),也可以直接git commit -m "提交的信息"
+（也可以git commit --amend -m "提交的信息"，日志里少一条）
+
+git push（得先配置好远程才行，否则得输入github的用户名密码）
+
+在VS code按照它默认的push方式总是多生成一个分支，远程是main上传了一个master分支，试了两个仓库都是这样、、、
+
+
+查看本地库对应的远程库： git remote -v
+
+查看本地分支：git branch(对应当前分支有一个星号)
+
+列出所有（远端+近端）分支：git branch -a
+
+创建本地分支：git branch 分支名字
+
+分支切换： git checkout 分支名称
+
+向远程库推送：git push 远程库名称 分支名称 （推送所有：--all）
+
+删除(远程)分支：git push (远程库名称) -d(-D：强制删除有修改未合并) 分支名称
